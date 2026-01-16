@@ -1,0 +1,90 @@
+/* TiptapEditor.css */
+
+.tiptap-editor-wrapper {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.tiptap-menubar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f8f9fa;
+  border-radius: 4px 4px 0 0;
+}
+
+.tiptap-menubar button {
+  background: none;
+  border: none;
+  padding: 6px 10px;
+  margin-right: 4px;
+  margin-bottom: 4px; /* For wrapping */
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.tiptap-menubar button:hover {
+  background-color: #e0e0e0;
+}
+
+.tiptap-menubar button.is-active {
+  background-color: #d0d0d0;
+  font-weight: bold;
+}
+
+.tiptap-menubar button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Styles for the Tiptap editor content area */
+.tiptap-editor-wrapper .ProseMirror {
+  padding: 10px;
+  min-height: 150px; /* Or adjust as needed */
+  outline: none;
+  line-height: 1.6;
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+}
+
+/* Basic styling for elements within the editor */
+.tiptap-editor-wrapper .ProseMirror p {
+  margin-bottom: 0.75em;
+}
+
+.tiptap-editor-wrapper .ProseMirror h1,
+.tiptap-editor-wrapper .ProseMirror h2,
+.tiptap-editor-wrapper .ProseMirror h3 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+.tiptap-editor-wrapper .ProseMirror ul,
+.tiptap-editor-wrapper .ProseMirror ol {
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+
+.tiptap-editor-wrapper .ProseMirror blockquote {
+  border-left: 3px solid #ccc;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1em;
+  color: #666;
+}
+
+.tiptap-editor-wrapper .ProseMirror img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Prevent extra space below image */
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.tiptap-editor-wrapper .ProseMirror img.ProseMirror-selectednode {
+  outline: 3px solid #68cef8;
+} 

@@ -1,0 +1,74 @@
+/* Header Container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    font-family: 'San Francisco', Arial, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Section */
+.header-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #01579b;
+    cursor: pointer;
+}
+
+/* Navigation Links */
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+    .header-nav a:hover {
+        color: #0288d1;
+    }
+
+/* Search Bar */
+.header-search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0.3rem 0.8rem;
+    background: #f9f9f9;
+}
+
+    .header-search input {
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        padding: 0.3rem;
+        width: 150px;
+    }
+
+    .header-search button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #333;
+        font-size: 1.2rem;
+        margin-left: 0.3rem;
+        transition: color 0.3s;
+    }
+
+        .header-search button:hover {
+            color: #0288d1;
+        }

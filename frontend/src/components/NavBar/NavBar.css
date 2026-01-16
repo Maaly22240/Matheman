@@ -1,0 +1,123 @@
+.navbar {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    cursor: pointer;
+}
+
+.navbar-brand h1 {
+    color: #2196f3;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.profile-section {
+    position: relative;
+}
+
+.profile-trigger {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.profile-trigger:hover {
+    background: #f5f5f5;
+}
+
+.profile-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #2196f3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.profile-name {
+    font-weight: 500;
+}
+
+.arrow {
+    border: solid #666;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 4px;
+}
+
+.arrow.down {
+    transform: rotate(45deg);
+}
+
+.arrow.up {
+    transform: rotate(-135deg);
+}
+
+.profile-dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    min-width: 200px;
+    margin-top: 8px;
+}
+
+.dropdown-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-header strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.dropdown-header small {
+    color: #666;
+}
+
+.profile-dropdown button {
+    width: 100%;
+    padding: 12px 16px;
+    text-align: left;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333; /* Add this line */
+}
+
+.profile-dropdown button:hover {
+    background: #f5f5f5;
+    color: #2196f3; /* Add this line */
+}
+
+.dropdown-divider {
+    height: 1px;
+    background: #eee;
+}
+
+.logout-btn {
+    color: #dc3545;
+}

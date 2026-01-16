@@ -1,0 +1,114 @@
+.technique-banner {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.technique-icon-container {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technique-icon {
+    font-size: 2rem;
+    opacity: 0.8;
+    color: #333;
+}
+
+.technique-content {
+    flex: 1;
+}
+
+.technique-content h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.technique-content p {
+    margin: 0;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Specific styles for different technique types */
+.technique-banner[data-type="recall"] .technique-icon {
+    color: #2e7d32;
+}
+
+.technique-banner[data-type="spaced-repetition"] .technique-icon {
+    color: #1565c0;
+}
+
+.technique-banner[data-type="interleaved"] .technique-icon {
+    color: #ef6c00;
+}
+
+.technique-banner[data-type="encoding"] .technique-icon {
+    color: #7b1fa2;
+}
+
+.technique-banner[data-type="contextual-variation"] .technique-icon {
+    color: #0097a7;
+}
+
+.technique-banner[data-type="chunking"] .technique-icon {
+    color: #546e7a;
+}
+
+/* Animation for technique tips that appear during quiz */
+.technique-tip {
+    background-color: #e8f5e9;
+    border-left: 4px solid #2e7d32;
+    padding: 12px 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.technique-tip h4 {
+    margin: 0 0 8px 0;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #2e7d32;
+}
+
+.technique-tip h4 svg {
+    margin-right: 8px;
+}
+
+.technique-tip p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .technique-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .technique-icon-container {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

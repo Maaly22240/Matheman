@@ -1,0 +1,47 @@
+/* Global App Styles */
+.app {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #01579b;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000; /* Default link color */
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: purple; /* Highlight active link */
+}
+
+/* Main Content Styling */
+.main {
+    padding: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}

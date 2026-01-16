@@ -1,0 +1,107 @@
+.profile-container {
+    max-width: 800px;
+    margin: 80px auto 0;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #2196f3;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.role-badge {
+    background: #e3f2fd;
+    color: #2196f3;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.profile-content {
+    padding: 1rem;
+}
+
+.info-group {
+    margin-bottom: 1.5rem;
+}
+
+.info-group label {
+    font-weight: bold;
+    color: #666;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.info-group p {
+    margin: 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.edit-button, .save-button, .cancel-button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.edit-button {
+    background: #2196f3;
+    color: white;
+}
+
+.save-button {
+    background: #4caf50;
+    color: white;
+    margin-right: 1rem;
+}
+
+.cancel-button {
+    background: #f44336;
+    color: white;
+}
+
+.edit-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.edit-form input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.button-group {
+    margin-top: 2rem;
+}
+
+.message {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    background: #e3f2fd;
+    color: #2196f3;
+}
