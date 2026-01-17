@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import NavBar from './components/NavBar';
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import Login from "./pages/Login_Modern";
+import Signup from "./pages/Signup_Modern";
 import Learning from "./pages/Learning";
-import StudentDashboard from "./components/StudentDashboard";
+import StudentDashboard from "./components/StudentDashboard_Modern";
 import TeacherDashboard from "./components/TeacherDashboard";
-import Profile from "./components/Profile/Profile";
+import Profile from "./pages/Profile_Modern";
 import MessagesPage from "./pages/MessagesPage";
 import "./styles/App.css";
+import "./styles/ModernTheme.css";
 import MainLayout from "./components/Layout/MainLayout";
 import Home from "./pages/Home";
-import ChapterView from './components/ChapterView';
-import EnhancedChapterView from './components/EnhancedChapterView';
+import ChapterView from './pages/ChapterView_Modern';
+import EnhancedChapterView from './pages/ChapterView_Modern';
 import QuizView from './components/QuizView';
 
 const App = () => {
